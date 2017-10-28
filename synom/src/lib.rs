@@ -25,7 +25,7 @@ extern crate proc_macro;
 extern crate proc_macro2;
 
 #[cfg(feature = "printing")]
-extern crate quote;
+extern crate futures_await_quote as quote;
 
 #[doc(hidden)]
 pub use proc_macro2::{TokenTree, TokenStream};

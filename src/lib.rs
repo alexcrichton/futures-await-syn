@@ -7,10 +7,10 @@ extern crate proc_macro2;
 extern crate unicode_xid;
 
 #[cfg(any(feature = "printing", feature = "parsing"))]
-extern crate quote;
+extern crate futures_await_quote as quote;
 
 #[cfg_attr(feature = "parsing", macro_use)]
-extern crate synom;
+extern crate futures_await_synom as synom;
 
 #[macro_use]
 mod macros;
